@@ -91,6 +91,11 @@
         scroll-behavior: smooth;
     }
     
+    .header,
+    .main {
+        display: none;
+    }
+    
     body {
         margin: 0 0 var(--header-height);
         color: var(--text-color);
