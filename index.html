@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Fabian Pavia</title>
+</head>
+
+<body>
+    <header>
+        <!-- Header - Nav.-->
+        <div id="home_start">
+            <!-- Header - Nav. Fin.-->
+            <nav class="menu_start_mobile container">
+                <a href="#" class="nav_logo">fabian4613</a>
+                <ul class="menu_items_mobile">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+                <div class="nav_btns">
+                    <!-- Theme change button -->
+                    <i class="far fa-moon"></i>
+                </div>
+        </div>
+
+        </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="home section" id="present">
+            <!-- Presentacion-->
+            <div class="home_container container grid">
+                <div class="home_content">
+                    <div class="home_data">
+
+                        <h1 class="home_title">
+                            Hi, I'm Fabián Pavia
+                        </h1>
+                        <p class="home_subtitle">
+                            Frontend developer
+                        </p>
+                        <p class="home_description">
+                            With extensive knowledge in IT support.
+                        </p>
+                        <a href="#contact" class="button button_flex">
+                            Contact Me <i class="far fa-paper-plane button_icon"></i>
+                        </a>
+                    </div>
+                    <div class="home_line">
+                        <span class="line"></span>
+                    </div>
+                    <div class="home_img">
+                        <img class="home_png" src="./img/yo.png" alt="Fabian Pavia">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Presentacion. Fin.-->
+        </section>
+        <!-- Portfolio -->
+        <section class="portfolio section" id="portfolio">
+            <div class="home_portfolio">
+                <h2 class="section_title">Portfolio</h2>
+                <span class="section_subtitle">Most recent work</span>
+                <div class="portfolio grid">
+                    <div class="portfolio_img">
+                        <a target="_blank" href="https://varuz.netlify.app/">
+                            <img class="project_png" src="./img/varuzlogo.png" alt="Logo Varuz">
+                        </a>
+                        <a target="_blank" href="https://fabianpavia.netlify.app/">
+                            <img class="project_png" src="./img/personalwebsite.png" alt="Logo Personal Website">
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Presentacion Contact -->
+        <section class="contact section" id="contact">
+
+            <h2 class="section_title">Contact me</h2>
+            <span class="section_subtitle">Get in touch</span>
+            <div class="contact_container container grid">
+
+
+                <form name="contact" method="POST" class="contact_form grid">
+
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" name="name" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" name="email" class="contact_input">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Project</label>
+                        <input type="text" name="project" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+
+                    <div class="contact_send">
+
+                        <button type="submit" class="button button_flex">
+                                Send Message
+                                <i class="far fa-paper-plane button_icon"></i>
+                            </button>
+
+                    </div>
+                </form>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+</body>
+
+<script src="https://kit.fontawesome.com/13a33b19fd.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Menu -->
+<script src="./js/menu.js"></script>
+<!-- Menu. Fin. -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+</html>
