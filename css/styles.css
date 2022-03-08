@@ -391,6 +391,7 @@
         margin-top: var(--mt-2);
         background-color: var(--first-color);
         color: snow;
+        cursor: pointer;
         padding: 1rem;
         border-radius: 0.5rem;
         font-weight: var(--font-medium);
