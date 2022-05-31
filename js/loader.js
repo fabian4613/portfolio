@@ -13,6 +13,7 @@ function init() {
         for (; index < length; index++) {
             elems[index].style.display = "block";
         }
+        body.style.background = "var(--body-color)";
     }, 3000);
 }
 init();

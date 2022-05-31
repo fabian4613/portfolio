@@ -10,29 +10,6 @@
         /* Change favorite color */
         --hue-color: 213;
         /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-        /* HSL color mode - Theme White */
-        --first-color: hsl(var(--hue-color), 69%, 61%);
-        --first-color-second: hsl(var(--hue-color), 69%, 61%);
-        --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-        --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-        --title-color: hsl(var(--hue-color), 8%, 15%);
-        --text-color: hsl(var(--hue-color), 8%, 15%);
-        --text-color-light: hsl(var(--hue-color), 8%, 65%);
-        --input-color: hsl(var(--hue-color), 70%, 96%);
-        --body-color: hsl(var(--hue-color), 60%, 99%);
-        --container-color: #FFF;
-        --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-        --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-        /* HSL color mode - Theme Dark*/
-        --first-color-second: hsl(var(--hue-color), 30%, 8%);
-        --title-color: hsl(var(--hue-color), 8%, 95%);
-        --text-color: hsl(var(--hue-color), 8%, 75%);
-        --input-color: hsl(var(--hue-color), 29%, 16%);
-        --body-color: hsl(var(--hue-color), 28%, 12%);
-        --container-color: hsl(212, 32%, 8%);
-        --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-        --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-        --container-color-2: hsl(var(--hue-color, 29%, 16%));
         /*========== Font and typography ==========*/
         --body-font: 'Poppins', sans-serif;
         /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -192,7 +169,7 @@
     
     .menu_items_mobile li {
         border-radius: 0.5rem;
-        margin: 0 5px;
+        margin: 0 5px 0 0;
     }
     
     .menu_items_mobile li a {
@@ -203,7 +180,7 @@
         letter-spacing: 1px;
         display: block;
         text-transform: uppercase;
-        color: white;
+        color: var(--title-color);
     }
     
     .menu_items_mobile li:hover,
@@ -360,9 +337,9 @@
     .home_png {
         border-radius: 50%;
         filter: brightness(0.9);
-        border: 1px solid black;
+        border: var(--border-color-perfil);
         width: 17rem;
-        box-shadow: 0px 0px 0px 5px rgb(255 255 255);
+        box-shadow: var(--shadow-image-perfil);
     }
     
     .home_data {

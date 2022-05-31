@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./css/dark.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="./css/light.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Fabian Pavia</title>
 </head>
@@ -32,7 +34,7 @@
                 </ul>
                 <div class="nav_btns">
                     <!-- Theme change button -->
-                    <i class="far fa-moon"></i>
+                    <dark-mode-toggle id="dark-mode-toggle-1" appearance="toggle" dark="Dark" light="Light"></dark-mode-toggle>
                 </div>
         </div>
 
@@ -171,7 +173,7 @@
         </div>
     </footer>
 </body>
-
+<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 <script src="https://kit.fontawesome.com/13a33b19fd.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
