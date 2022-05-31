@@ -5,6 +5,7 @@
     
      :root {
         --header-height: 0;
+        --oversize-horizontal: hidden;
         /*========== Colors ==========*/
         /* Change favorite color */
         --hue-color: 213;
@@ -89,6 +90,7 @@
     
     html {
         scroll-behavior: smooth;
+        overflow-x: var(--oversize-horizontal);
     }
     
     .header,
@@ -439,6 +441,7 @@
     .project_png {
         width: 353px;
         height: 280px;
+        object-fit: cover;
         filter: blur(1px) brightness(0.6);
         transition: 0.2s all ease-in;
     }
