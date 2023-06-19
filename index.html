@@ -99,34 +99,33 @@
         </section>
         <!-- Presentacion Contact -->
         <section class="contact section" data-aos="fade-up" id="contact">
-
             <h2 class="section_title">Contact me</h2>
             <span class="section_subtitle">Get in touch</span>
             <div class="contact_container container grid">
-                <form name="contact" method="POST" class="contact_form grid">
+                <form name="contact" method="POST" class="contact_form grid" onsubmit="sendEmail(event);">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
-                            <label for="" class="contact_label">Name</label>
-                            <input type="text" name="name" class="contact_input">
+                            <label for="name" class="contact_label">Name</label>
+                            <input type="text" id="name" name="name" class="contact_input" required>
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
-                            <input type="email" name="email" class="contact_input">
+                            <label for="email" class="contact_label">Email</label>
+                            <input type="email" id="email" name="email" class="contact_input" required>
                         </div>
                     </div>
                     <div class="contact_content">
-                        <label for="" class="contact_label">Project</label>
-                        <input type="text" name="project" class="contact_input">
+                        <label for="project" class="contact_label">Project</label>
+                        <input type="text" id="project" name="project" class="contact_input">
                     </div>
                     <div class="contact_content">
-                        <label for="" class="contact_label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        <label for="message" class="contact_label">Message</label>
+                        <textarea id="message" name="message" cols="0" rows="7" class="contact_input" required></textarea>
                     </div>
                     <div class="contact_send">
                         <button type="submit" class="button button_flex">
-                                Send Message
-                                <i class="far fa-paper-plane button_icon"></i>
-                            </button>
+                            Send Message
+                            <i class="far fa-paper-plane button_icon"></i>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -176,6 +175,29 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init('MAz7NWyW3KHwa7VZj');
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_446t9jl', 'template_fe5d75n', event.target)
+            .then(function (response) {
+                console.log('Correo electrónico enviado', response.status, response.text);
+                alert('Correo electrónico enviado correctamente');
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("project").value = "";
+                document.getElementById("message").value = "";
+            }, function (error) {
+                console.log('Error al enviar el correo electrónico', error);
+                alert('Error al enviar el correo electrónico');
+            });
+    }
+</script>
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 <script src="https://kit.fontawesome.com/13a33b19fd.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
